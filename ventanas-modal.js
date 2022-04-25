@@ -2,6 +2,8 @@ const botonEditar = document.querySelectorAll(".boton-editar");
 const botonEliminar = document.querySelectorAll(".boton-tacho");
 const fondoModal = document.querySelector(".fondo-modal");
 const ventanaModal = document.querySelector(".ventana-modal");
+const tituloVentanaModal = document.querySelector("#titulo-ventana-modal");
+const selectVendedora = document.querySelector(".select-vendedora");
 
 fondoModal.classList.add("oculto");
 ventanaModal.classList.add("oculto");
@@ -17,11 +19,11 @@ const cerrarModal = () => {
     ventanaModal.classList.add("oculto");
 }
 
-
 // funcionalidad de boton editar modal
 for (let i = 0; i < botonEditar.length; i++) {
     botonEditar[i].onclick = () => {
-        console.log("funciona boton editar")
+        // console.log("funciona boton editar")
+        tituloVentanaModal.textContent = "Editar venta";
         return abrirModal();
     }
 };
@@ -30,7 +32,8 @@ for (let i = 0; i < botonEditar.length; i++) {
 // funcionalidad de boton eliminar modal
 for (let i = 0; i < botonEliminar.length; i++) {
     botonEliminar[i].onclick = () => {
-        console.log("funciona boton eliminar")
+        // console.log("funciona boton eliminar")
+        tituloVentanaModal.textContent = "Eliminar venta";
         return abrirModal();
     }
 };
@@ -39,4 +42,8 @@ for (let i = 0; i < botonEliminar.length; i++) {
 fondoModal.onclick = () => {
     return cerrarModal();
 }
+
+// console.log(ventas); ARRAY BIDIMENSIONAL
+// console.log(vendedoras); ARRAY COMUN
+// console.log(precios); ARRAY BIDIMENSIONAL
 
