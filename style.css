@@ -1,16 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(204, 224, 213);
-    display: flex;
 }
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     height: 90vh;
@@ -18,13 +17,13 @@ section{
     margin: 2em;
 }
 
-.container-sucursal-reportes{
+.container-sucursal-reportes {
     width: 100%;
     display: flex;
     height: 35%;
 }
 
-.container-ventas{
+.container-ventas {
     width: 100%;
     display: flex;
     height: 65%;
@@ -39,7 +38,7 @@ section{
     flex-direction: column;
 }
 
-.tarjeta-ventas{
+.tarjeta-ventas {
     margin: 1em;
     width: 99%;
     background-color: white;
@@ -48,25 +47,26 @@ section{
     flex-direction: column;
 }
 
-.titulo-azul{
+.titulo-azul {
     background-color: cadetblue;
     color: white;
     border-top-left-radius: 1vh;
     border-top-right-radius: 1vh;
 }
 
-h2{
+h2 {
     font-size: 2.5vh;
     padding: 1em;
 }
 
-.container-tabla, .container-reportes{
+.container-tabla,
+.container-reportes {
     width: 100%;
     height: 100%;
     overflow-y: auto;
 }
 
-table{
+table {
     padding: 1vh;
     margin: auto;
     color: rgb(63, 112, 114);
@@ -76,23 +76,23 @@ table{
     margin-top: 2vh;
 }
 
-td{
+td {
     padding: 0.5vh;
     border-top: solid 1px rgb(214, 214, 214);
 }
 
-button{
+button {
     background-color: rgb(196, 196, 196);
     border: none;
     padding: 1vh;
     margin: 0.2vh;
 }
 
-.texto-reportes{
+.texto-reportes {
     margin-top: 4vh;
 }
 
-p{
+p {
     padding: 1vh;
     color: rgb(63, 112, 114);
     width: 95%;
@@ -100,6 +100,78 @@ p{
     margin-left: 2vw;
 }
 
-p span{
+p span {
     font-weight: bold;
+}
+
+.fondo-modal {
+    margin-top: -5vh;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+}
+
+.container-ventana-modal {
+    height: 100%;
+    width: 100%;
+}
+
+.container-form-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    color: rgb(63, 112, 114);
+}
+
+.ventana-modal {
+    box-sizing: content-box;
+    width: 33%;
+    background-color: white;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 9%;
+    border-radius: 1vh;
+}
+
+.oculto {
+    display: none;
+}
+
+h3 {
+    font-size: 3vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+select {
+    width: 100%;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+.container-select-vendedora {
+    padding-bottom: 2%;
+}
+
+.container-select-sucursal {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.input-fecha {
+    width: 100%;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+.input-sucursal {
+    width: 100%;
+    height: 6vh;
+    font-size: 2vh;
+}
+
+.input-sucursal option {
+    padding: 0.5%;
 }
