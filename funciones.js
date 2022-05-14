@@ -2,6 +2,7 @@ const precioMaquina = (array) => {
     // recibe un array de componentes y devuelve el precio de la máquina que se puede armar con esos componentes, que es la suma de los precios de cada componente incluido
 }
 
+
 const cantidadVentasComponente = (componente) => {
     // recibe un componente y devuelve la cantidad de veces que fue vendido, o sea que formó parte de una máquina que se vendió. La lista de ventas no se pasa por parámetro, se asume que está identificada por la variable ventas
 }

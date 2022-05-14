@@ -69,4 +69,3 @@ botonCancelarEditar.onclick = () => {
 botonCancelarEliminar.onclick = () => {
     return cerrarModalEliminar();
 }
-
