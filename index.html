@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>TP Ada Computación</title>
+    <script src="https://kit.fontawesome.com/e948dc35df.js" crossorigin="anonymous"></script>
     <script src="datos-precargados.js"></script>
 </head>
 
 <body>
 
-    <!-- ventana modal -->
+    <!-- ventana modal editar venta-->
     <div class="fondo-modal"></div>
     <div class="container-ventana-modal">
         <div class="ventana-modal">
@@ -20,48 +21,73 @@
                 <h2 id="titulo-ventana-modal">Agregar venta</h2>
             </div>
             <div class="container-form-modal">
-                <div class="form-modal">
-                    <form>
-                        <div class="container-select-vendedora">
-                            <h3>Vendedora</h3>
-                            <select name="Vendedora" class="select-vendedora">
-                                <option value="vendedora-1">Ada</option>
-                                <option value="vendedora-2" selected>Grace</option>
-                                <option value="vendedora-3">Hedy</option>
-                                <option value="vendedora-4">Sheryl</option>
-                            </select>
-                        </div>
-                        <div class="container-select-componentes">
-                            <h3>Componentes</h3>
-                            <select name="select-componentes">
-                                <option value="componente-1">Monitor GPRS 3000</option>
-                                <option value="componente-2" selected>Motherboard ASUS 1500</option>
-                                <option value="componente-3">Monitor ASC 543</option>
-                                <option value="componente-4">Motherboard ASUS 1200</option>
-                                <option value="componente-5">Motherboard MZI</option>
-                                <option value="componente-6">HDD Toyiva</option>
-                                <option value="componente-7">HDD Wezter Dishital</option>
-                                <option value="componente-8">RAM Quinston</option>
-                                <option value="componente-9">RAM Quinston Fury</option>
-                            </select>
-                        </div>
-                        <div class="container-select-sucursal">
-                            <h3>Sucursal</h3>
-                            <select multiple name="sucursal" size="2" class="input-sucursal">
-                                <option value="centro">Centro</option>
-                                <option value="caballito">Caballito</option>
-                            </select>
-                        </div>
-                        <div class="container-select-sucursal">
-                            <h3>Fecha</h3>
-                            <input type="date" class="input-fecha">
-                        </div>
-                    </form>
-                </div>
+                <form>
+                    <div class="container-select-vendedora">
+                        <h3>Vendedora</h3>
+                        <select name="Vendedora" class="select-vendedora">
+                            <option value="vendedora-1">Ada</option>
+                            <option value="vendedora-2" selected>Grace</option>
+                            <option value="vendedora-3">Hedy</option>
+                            <option value="vendedora-4">Sheryl</option>
+                        </select>
+                    </div>
+                    <div class="container-select-componentes">
+                        <h3>Componentes</h3>
+                        <select name="select-componentes">
+                            <option value="componente-1">Monitor GPRS 3000</option>
+                            <option value="componente-2" selected>Motherboard ASUS 1500</option>
+                            <option value="componente-3">Monitor ASC 543</option>
+                            <option value="componente-4">Motherboard ASUS 1200</option>
+                            <option value="componente-5">Motherboard MZI</option>
+                            <option value="componente-6">HDD Toyiva</option>
+                            <option value="componente-7">HDD Wezter Dishital</option>
+                            <option value="componente-8">RAM Quinston</option>
+                            <option value="componente-9">RAM Quinston Fury</option>
+                        </select>
+                    </div>
+                    <div class="container-select-sucursal">
+                        <h3>Sucursal</h3>
+                        <select multiple name="sucursal" size="2" class="input-sucursal">
+                            <option value="centro">Centro</option>
+                            <option value="caballito">Caballito</option>
+                        </select>
+                    </div>
+                    <div class="container-select-sucursal">
+                        <h3>Fecha</h3>
+                        <input type="date" class="input-fecha">
+                    </div>
+                </form>
+            </div>
+            <div class="footer-ventana-modal">
+                <input type="button" id="boton-cancelar-editar" value="Cancelar">
+                <input type="button" class="boton-guardar" value="Guardar">
             </div>
         </div>
     </div>
-    <!-- ventana modal -->
+    <!-- ventana modal editar venta-->
+
+
+
+    <!-- ventana modal eliminar-->
+    <div class="fondo-modal-eliminar"></div>
+    <div class="container-ventana-modal-eliminar">
+        <div class="ventana-modal-eliminar">
+            <div class="titulo-azul">
+                <h2 id="titulo-ventana-modal">Agregar venta</h2>
+            </div>
+            <div class="container-form-modal">
+                <h2 id="estas-segura">¿Estás segura?</h2>
+                <p>Esta acción no se puede revertir</p>
+            </div>
+            <div class="footer-ventana-modal">
+                <input type="button" id="boton-cancelar-eliminar" value="Cancelar">
+                <input type="button" class="boton-guardar" value="Guardar">
+            </div>
+        </div>
+    </div>
+    <!-- ventana modal eliminar-->
+
+
 
     <section>
         <div class="container-sucursal-reportes">
@@ -138,8 +164,8 @@
                                 <td>Centro</td>
                                 <td>Monitor GPRS 3000 - Motherboard ASUS 1500</td>
                                 <td>320</td>
-                                <td><button class="boton-editar">Lapiz</button><button
-                                        class="boton-tacho">Tacho</button></td>
+                                <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
+                                        class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
                             </tr>
                             <tr>
                                 <td>01/01/2019</td>
@@ -147,8 +173,8 @@
                                 <td>Centro</td>
                                 <td>Monitor GPRS 3000 - Motherboard ASUS 1500</td>
                                 <td>320</td>
-                                <td><button class="boton-editar">Lapiz</button><button
-                                        class="boton-tacho">Tacho</button></td>
+                                <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
+                                        class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
                             </tr>
                             <tr>
                                 <td>02/01/2019</td>
@@ -156,8 +182,8 @@
                                 <td>Caballito</td>
                                 <td>Monitor ASC 543 - Motherboard MZI</td>
                                 <td>280</td>
-                                <td><button class="boton-editar">Lapiz</button><button
-                                        class="boton-tacho">Tacho</button></td>
+                                <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
+                                        class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
                             </tr>
                             <tr>
                                 <td>10/01/2019</td>
@@ -165,8 +191,8 @@
                                 <td>Centro</td>
                                 <td>Monitor ASC 543 - Motherboard ASUS 1200</td>
                                 <td>350</td>
-                                <td><button class="boton-editar">Lapiz</button><button
-                                        class="boton-tacho">Tacho</button></td>
+                                <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
+                                        class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
                             </tr>
                             <tr>
                                 <td>12/01/2019</td>
@@ -174,8 +200,8 @@
                                 <td>Caballito</td>
                                 <td>Monitor GPRS 3000 - Motherboard ASUS 1200</td>
                                 <td>300</td>
-                                <td><button class="boton-editar">Lapiz</button><button
-                                        class="boton-tacho">Tacho</button></td>
+                                <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
+                                        class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
                             </tr>
                         </tbody>
                     </table>
