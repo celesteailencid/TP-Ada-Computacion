@@ -1,16 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(204, 224, 213);
-    display: flex;
 }
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     height: 90vh;
@@ -18,13 +17,13 @@ section{
     margin: 2em;
 }
 
-.container-sucursal-reportes{
+.container-sucursal-reportes {
     width: 100%;
     display: flex;
     height: 35%;
 }
 
-.container-ventas{
+.container-ventas {
     width: 100%;
     display: flex;
     height: 65%;
@@ -39,7 +38,7 @@ section{
     flex-direction: column;
 }
 
-.tarjeta-ventas{
+.tarjeta-ventas {
     margin: 1em;
     width: 99%;
     background-color: white;
@@ -48,25 +47,19 @@ section{
     flex-direction: column;
 }
 
-.titulo-azul{
-    background-color: cadetblue;
-    color: white;
-    border-top-left-radius: 1vh;
-    border-top-right-radius: 1vh;
-}
-
-h2{
+h2 {
     font-size: 2.5vh;
     padding: 1em;
 }
 
-.container-tabla, .container-reportes{
+.container-tabla,
+.container-reportes {
     width: 100%;
     height: 100%;
     overflow-y: auto;
 }
 
-table{
+table {
     padding: 1vh;
     margin: auto;
     color: rgb(63, 112, 114);
@@ -76,23 +69,23 @@ table{
     margin-top: 2vh;
 }
 
-td{
+td {
     padding: 0.5vh;
     border-top: solid 1px rgb(214, 214, 214);
 }
 
-button{
+button {
     background-color: rgb(196, 196, 196);
     border: none;
     padding: 1vh;
     margin: 0.2vh;
 }
 
-.texto-reportes{
+.texto-reportes {
     margin-top: 4vh;
 }
 
-p{
+p {
     padding: 1vh;
     color: rgb(63, 112, 114);
     width: 95%;
@@ -100,6 +93,140 @@ p{
     margin-left: 2vw;
 }
 
-p span{
+p span {
     font-weight: bold;
+}
+
+.titulo-azul {
+    background-color: cadetblue;
+    color: white;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+
+.fondo-modal,
+.fondo-modal-eliminar {
+    margin-top: -5vh;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+}
+
+.container-ventana-modal {
+    height: 100%;
+    width: 100%;
+}
+
+.container-form-modal,
+.container-form-modal-eliminar {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    color: rgb(63, 112, 114);
+}
+
+#no-revertir {
+    margin-left: 1em;
+}
+
+.ventana-modal,
+.ventana-modal-eliminar {
+    box-sizing: content-box;
+    width: 33%;
+    background-color: white;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 9%;
+    border-radius: 1vh;
+}
+
+.footer-ventana-modal {
+    background-color: rgb(204, 224, 213);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    padding: 1em;
+    display: flex;
+    justify-content: right;
+}
+
+#boton-cancelar-editar {
+    border: none;
+    background-color: white;
+    color: rgb(63, 112, 114);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+#boton-cancelar-eliminar {
+    border: none;
+    background-color: white;
+    color: rgb(63, 112, 114);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+
+.boton-guardar {
+    border: none;
+    background-color: rgb(63, 112, 114);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.oculto {
+    display: none;
+}
+
+h3 {
+    font-size: 3vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+select {
+    width: 100%;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+.container-select-vendedora {
+    padding-bottom: 2%;
+}
+
+.container-select-sucursal {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.input-fecha {
+    width: 100%;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+.input-sucursal {
+    width: 100%;
+    height: 6vh;
+    font-size: 2vh;
+}
+
+.input-sucursal option {
+    padding: 0.5%;
+}
+
+.boton-editar,
+.boton-tacho {
+    border: none;
+    background-color: rgb(63, 112, 114);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
