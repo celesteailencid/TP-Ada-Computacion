@@ -77,7 +77,7 @@
             </div>
             <div class="container-form-modal">
                 <h2 id="estas-segura">¿Estás segura?</h2>
-                <p>Esta acción no se puede revertir</p>
+                <p id="no-revertir">Esta acción no se puede revertir</p>
             </div>
             <div class="footer-ventana-modal">
                 <input type="button" id="boton-cancelar-eliminar" value="Cancelar">
@@ -157,8 +157,8 @@
                                 <th>Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="tabla-ventas">
+                            <!-- <tr>
                                 <td>04/02/2019</td>
                                 <td>Grace</td>
                                 <td>Centro</td>
@@ -202,7 +202,7 @@
                                 <td>300</td>
                                 <td><button class="boton-editar"><i class="fa-solid fa-pencil"></i></button><button
                                         class="boton-tacho"><i class="fa-solid fa-trash-can"></i></button></td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                     <!-- fin tabla de Ventas -->
@@ -214,6 +214,7 @@
     </section>
     <script src="funciones.js"></script>
     <script src="ventanas-modal.js"></script>
+    <script src="ventas.js"></script>
 </body>
 
 </html>
